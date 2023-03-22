@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from 'react';
+import Spinner from './components/spinner/spinner.component';
+import { GlobalStyle } from './index.styles';
+
+const Section = lazy(() => import('./components/section/section.component'));
+const Navigation = lazy(() =>
+  import('./components/navigation/navigation.component'),
+);
+const Footer = lazy(() => import('./components/footer/footer.component'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<Spinner />}>
+      <GlobalStyle />
+      <Navigation />
+      <Section />
+      <Footer />
+    </Suspense>
   );
 }
 
