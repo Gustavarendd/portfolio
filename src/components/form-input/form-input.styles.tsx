@@ -40,7 +40,7 @@ export const InputField = styled.input`
   display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
   border-bottom: 1px solid ${subColor};
   margin: 15px 0;
   &:focus {
@@ -64,7 +64,7 @@ export const MessageField = styled.textarea`
   display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
   border-bottom: 1px solid ${subColor};
   margin: 15px 0;
   min-height: 200px;

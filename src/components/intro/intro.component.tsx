@@ -11,10 +11,8 @@ const Intro = () => {
       <IntroTextContainer>
         <h3>Hi! My name is Gustav</h3>
         <p>
-          I come from Denmark and I am a determined self-taught frontend
-          developer with knowledge in HTML, CSS, JavaScript and React. I am
-          passionate about learning new technologies and creating sharp, useful
-          sites.
+          I am a determined self-taught frontend developer with knowledge in
+          HTML, CSS, JavaScript and React.
         </p>
       </IntroTextContainer>
     </Fragment>

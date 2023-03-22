@@ -5,8 +5,10 @@ const About = () => {
     <AboutContainer>
       <h3>About Me:</h3>
       <p>
-        In the past I have worked as a sailor on a danish educational ship which
-        enabled me to gain good teamwork and communication skills.
+        I come from Denmark and is now living in Prague. Since 2013 I have been
+        working onboard sailing ships around the world. Most recently I worked
+        onboard a Danish school-ship, teaching the basic education for trainees
+        who want to start working onboard ships worldwide.
       </p>
     </AboutContainer>
   );

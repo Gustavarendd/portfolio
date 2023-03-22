@@ -6,23 +6,23 @@ export const NavigationContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 25px;
-  background-color: lightcoral;
+  gap: 10%;
+  background-color: #d0d0d0;
 
   @media screen and (max-width: 800px) {
     margin-bottom: 20px;
   }
 `;
+
 export const NavLinks = styled.div`
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 `;
 
 export const NavLink = styled.div`
-  padding: 10px 15px;
+  padding: 10px 10px;
   cursor: pointer;
 `;

@@ -15,6 +15,7 @@ export const BaseButton = styled.button`
   font-family: 'Open Sans Condensed';
   font-weight: bolder;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -27,16 +28,21 @@ export const BaseButton = styled.button`
   }
 `;
 
-export const InvertedButton = styled(BaseButton)`
-  background-color: white;
+export const SentMessageButton = styled(BaseButton)`
+  background-color: #00bc1f;
   color: black;
   border: 1px solid black;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #0ac10d;
+    color: #000000;
     border: none;
   }
+`;
+
+export const PortfolioButton = styled(BaseButton)`
+  font-size: 15px;
+  height: 30px;
 `;
 
 export const ButtonSpinner = styled(SpinnerContainer)`

@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
-export const ContactContainer = styled.div`
+export const ContactSection = styled.div`
   display: flex;
   flex-direction: column;
-  width: 600px;
+  align-items: center;
+  width: 100%;
+`;
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 `;

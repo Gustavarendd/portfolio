@@ -14,5 +14,11 @@ export const ProjectContainer = styled.div`
 `;
 
 export const PortfolioImage = styled.img`
-  max-width: 100%;
+  width: 100%;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  width: 100%;
+  gap: 10px;
 `;

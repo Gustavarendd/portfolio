@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import FormInput from '../form-input/form-input.component';
 import TextArea from '../form-input/form-textarea.component';
 
-import { ContactContainer } from './contact.styles';
+import { ContactSection, FormContainer } from './contact.styles';
 import { Button, BUTTON_TYPES } from '../button/button.component';
 
 const defaultFormFields = {
@@ -14,6 +14,8 @@ const defaultFormFields = {
 };
 
 const Contact = () => {
+  const [buttonState, setButtonState] = useState(false);
+  const [isSending, setIsSending] = useState(false);
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { name, email, subject, message } = formFields;
 
@@ -33,8 +35,7 @@ const Contact = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    console.log(form);
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -43,57 +44,74 @@ const Contact = () => {
         form.current || '',
         'e6kkH-BNLS3rmLQLr',
       )
+      //r
       .then(
         result => {
-          console.log(result.text);
+          setIsSending(false);
+          setButtonState(true);
+          resetFormFields();
         },
         error => {
-          console.log(error.text);
+          alert(error.text);
+          setIsSending(false);
         },
       );
-    resetFormFields();
   };
 
   return (
-    <ContactContainer>
+    <ContactSection>
       <h3>Contact me:</h3>
-      <form ref={form} onSubmit={sendEmail}>
-        <FormInput
-          label="Name"
-          required
-          onChange={handleInputChange}
-          type={'text'}
-          name="name"
-          value={name}
-        />
-        <FormInput
-          label="Email"
-          required
-          onChange={handleInputChange}
-          type={'email'}
-          name="email"
-          value={email}
-        />
-        <FormInput
-          label="Subject"
-          onChange={handleInputChange}
-          type={'text'}
-          name="subject"
-          value={subject}
-        />
-        <TextArea
-          label="Message"
-          required
-          onChange={handleInputChange}
-          type={'text'}
-          name="message"
-          value={message}
-        />
-        <Button type="submit" value="send">
-          SEND
-        </Button>
-      </form>
-    </ContactContainer>
+      <FormContainer>
+        <form ref={form} onSubmit={sendEmail}>
+          <FormInput
+            label="Name"
+            required
+            onChange={handleInputChange}
+            type={'text'}
+            name="name"
+            value={name}
+          />
+          <FormInput
+            label="Email"
+            required
+            onChange={handleInputChange}
+            type={'email'}
+            name="email"
+            value={email}
+          />
+          <FormInput
+            label="Subject"
+            required
+            onChange={handleInputChange}
+            type={'text'}
+            name="subject"
+            value={subject}
+          />
+          <TextArea
+            label="Message"
+            required
+            onChange={handleInputChange}
+            type={'text'}
+            name="message"
+            value={message}
+          />
+          {!buttonState ? (
+            <Button type="submit" isLoading={isSending} value="send">
+              Send Message
+            </Button>
+          ) : (
+            <Button
+              buttonType={BUTTON_TYPES.sentMessage}
+              type="submit"
+              isLoading={isSending}
+              value="send"
+            >
+              Message was Sent!
+            </Button>
+          )}
+        </form>
+      </FormContainer>
+    </ContactSection>
   );
 };
 

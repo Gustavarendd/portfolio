@@ -12,4 +12,5 @@ export const IntroTextContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding-left: 50px;
+  text-align: center;
 `;
