@@ -4,12 +4,14 @@ import {
   SentMessageButton,
   PortfolioButton,
   ButtonSpinner,
+  BackToTopButton,
 } from './button.styles';
 
 export enum BUTTON_TYPES {
   base = 'base',
   sentMessage = 'sentMessage',
   portfolio = 'portfolio',
+  backToTopButton = 'backToTopButton',
 }
 
 const getButton = (buttonType = BUTTON_TYPES.base): typeof BaseButton =>
@@ -17,6 +19,7 @@ const getButton = (buttonType = BUTTON_TYPES.base): typeof BaseButton =>
     [BUTTON_TYPES.base]: BaseButton,
     [BUTTON_TYPES.sentMessage]: SentMessageButton,
     [BUTTON_TYPES.portfolio]: PortfolioButton,
+    [BUTTON_TYPES.backToTopButton]: BackToTopButton,
   }[buttonType]);
 
 export type ButtonProps = {

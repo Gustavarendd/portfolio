@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react';
 import Spinner from './components/spinner/spinner.component';
 import { GlobalStyle } from './index.styles';
+import Skills from './components/skills/skills.component';
+import BackToTopButton from './components/back-to-top/back-to-top.component';
 
 const Section = lazy(() => import('./components/section/section.component'));
 const Navigation = lazy(() =>
@@ -13,7 +15,9 @@ function App() {
     <Suspense fallback={<Spinner />}>
       <GlobalStyle />
       <Navigation />
+      <Skills />
       <Section />
+      <BackToTopButton />
       <Footer />
     </Suspense>
   );

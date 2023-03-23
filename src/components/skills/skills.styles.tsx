@@ -8,28 +8,59 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  row-gap: 10px;
+  position: fixed;
+  width: 15%;
+  max-width: 250px;
+  margin-top: 100px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  padding: 10px;
+  background-color: #dadada;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px grey;
+  @media screen and (max-width: 1400px) {
+    width: 10%;
+  }
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 15px;
+  padding-left: 6rem;
   width: 100%;
+  @media screen and (max-width: 1400px) {
+    justify-content: center;
+    padding-left: 0;
+  }
 `;
 
 export const HTMLLogo = styled(htmlSVG)`
   max-height: 50px;
+  max-width: 50px;
 `;
 
 export const CSSLogo = styled(cssSVG)`
   max-height: 50px;
+  max-width: 50px;
 `;
 
 export const JSLogo = styled(jsSVG)`
   max-height: 50px;
+  max-width: 50px;
 `;
 
 export const ReactLogo = styled(reactSVG)`
   max-height: 50px;
+  max-width: 50px;
+`;
+
+export const SkillText = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
 `;

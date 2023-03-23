@@ -10,6 +10,7 @@ export const NavigationContainer = styled.div`
   margin-bottom: 25px;
   gap: 10%;
   background-color: #d0d0d0;
+  box-shadow: 0px 5px 15px gray;
 
   @media screen and (max-width: 800px) {
     margin-bottom: 20px;

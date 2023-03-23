@@ -1,9 +1,13 @@
 import { Fragment } from 'react';
-import { ProfilePicture, IntroTextContainer } from './intro.styles';
+import {
+  IntroContainer,
+  ProfilePicture,
+  IntroTextContainer,
+} from './intro.styles';
 
 const Intro = () => {
   return (
-    <Fragment>
+    <IntroContainer>
       <ProfilePicture
         src={require('../../assets/profilePicture.jpeg')}
         alt="Gustav"
@@ -15,7 +19,7 @@ const Intro = () => {
           HTML, CSS, JavaScript and React.
         </p>
       </IntroTextContainer>
-    </Fragment>
+    </IntroContainer>
   );
 };
 

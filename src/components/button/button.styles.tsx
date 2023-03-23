@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { SpinnerContainer } from '../spinner/spinner.styles';
+import { ReactComponent as upArrowSVG } from '../../assets/Logos/up-arrow.svg';
 
 export const BaseButton = styled.button`
   min-width: 200px;
@@ -48,4 +49,11 @@ export const PortfolioButton = styled(BaseButton)`
 export const ButtonSpinner = styled(SpinnerContainer)`
   width: 30px;
   height: 30px;
+`;
+
+export const BackToTopButton = styled(BaseButton)`
+  width: 50px;
+  height: 50px;
+  min-width: 0;
+  border-radius: 50px;
 `;

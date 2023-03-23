@@ -16,7 +16,7 @@ const Portfolio = () => {
   };
   return (
     <PortfolioContainer>
-      <h3>Portfolio:</h3>
+      <h3>Project Portfolio:</h3>
       <ProjectContainer>
         <PortfolioImage
           src={require('../../assets/portfolio/crown-app.png')}

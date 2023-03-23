@@ -5,17 +5,28 @@ import {
   JSLogo,
   ReactLogo,
   ImageContainer,
+  SkillText,
 } from './skills.styles';
 
 const Skills = () => {
   return (
     <Container>
-      <h3>Skills:</h3>
+      <h4>Skills:</h4>
       <ImageContainer>
         <HTMLLogo />
+        <SkillText>HTML</SkillText>
+      </ImageContainer>
+      <ImageContainer>
         <CSSLogo />
+        <SkillText>CSS</SkillText>
+      </ImageContainer>
+      <ImageContainer>
         <JSLogo />
+        <SkillText>JavaScript</SkillText>
+      </ImageContainer>
+      <ImageContainer>
         <ReactLogo />
+        <SkillText>React</SkillText>
       </ImageContainer>
     </Container>
   );

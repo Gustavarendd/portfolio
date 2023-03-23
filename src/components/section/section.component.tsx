@@ -15,9 +15,7 @@ const Section = () => {
       <SectionContainer>
         <About />
       </SectionContainer>
-      <SectionContainer>
-        <Skills />
-      </SectionContainer>
+
       <SectionContainer>
         <Portfolio />
       </SectionContainer>
