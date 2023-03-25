@@ -44,6 +44,21 @@ export const SentMessageButton = styled(BaseButton)`
 export const PortfolioButton = styled(BaseButton)`
   font-size: 15px;
   height: 30px;
+  min-width: 45%;
+`;
+
+export const SideScrollButton = styled(BaseButton)`
+  height: 100px;
+  width: 10px;
+  min-width: 5%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+  }
 `;
 
 export const ButtonSpinner = styled(SpinnerContainer)`
@@ -56,4 +71,5 @@ export const BackToTopButton = styled(BaseButton)`
   height: 50px;
   min-width: 0;
   border-radius: 50px;
+  position: fixed;
 `;

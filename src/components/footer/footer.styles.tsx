@@ -14,6 +14,7 @@ export const FooterContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: #d0d0d0;
+  box-shadow: 0px 2px 15px 0px grey;
 `;
 
 export const ImageContainer = styled.div`

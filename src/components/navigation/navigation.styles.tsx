@@ -7,13 +7,11 @@ export const NavigationContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
-  gap: 10%;
+  gap: 20%;
   background-color: #d0d0d0;
   box-shadow: 0px 5px 15px gray;
 
   @media screen and (max-width: 800px) {
-    margin-bottom: 20px;
   }
 `;
 

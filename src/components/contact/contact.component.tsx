@@ -44,7 +44,7 @@ const Contact = () => {
         form.current || '',
         'e6kkH-BNLS3rmLQLr',
       )
-      //r
+
       .then(
         result => {
           setIsSending(false);
@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <ContactSection>
-      <h3>Contact me:</h3>
+      <h3>Send me an Email</h3>
       <FormContainer>
         <form ref={form} onSubmit={sendEmail}>
           <FormInput

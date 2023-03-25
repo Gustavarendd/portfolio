@@ -16,8 +16,8 @@ function App() {
       <GlobalStyle />
       <Navigation />
       <Skills />
+      {/* <BackToTopButton /> */}
       <Section />
-      <BackToTopButton />
       <Footer />
     </Suspense>
   );

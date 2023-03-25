@@ -1,28 +1,25 @@
-import { Fragment } from 'react';
 import Intro from '../intro/intro.component';
 import About from '../about/about.component';
-import Skills from '../skills/skills.component';
 import Portfolio from '../portfolio/portfolio.component';
 import Contact from '../contact/contact.component';
-import { SectionContainer } from './section.styles';
+import { SectionContainer, Container } from './section.styles';
 
 const Section = () => {
   return (
-    <Fragment>
+    <Container>
       <SectionContainer>
         <Intro />
       </SectionContainer>
       <SectionContainer>
         <About />
       </SectionContainer>
-
       <SectionContainer>
         <Portfolio />
       </SectionContainer>
       <SectionContainer>
         <Contact />
       </SectionContainer>
-    </Fragment>
+    </Container>
   );
 };
 

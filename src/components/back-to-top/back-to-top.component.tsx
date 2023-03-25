@@ -1,11 +1,12 @@
 import { Fragment } from 'react';
+import { Button, BUTTON_TYPES } from '../button/button.component';
 import { UpArrow } from './back-to-top.styles';
 
 const BackToTopButton = () => {
   return (
-    <Fragment>
+    <Button buttonType={BUTTON_TYPES.backToTopButton}>
       <UpArrow />
-    </Fragment>
+    </Button>
   );
 };
 

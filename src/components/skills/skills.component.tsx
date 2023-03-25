@@ -11,7 +11,7 @@ import {
 const Skills = () => {
   return (
     <Container>
-      <h4>Skills:</h4>
+      <h4>Skills</h4>
       <ImageContainer>
         <HTMLLogo />
         <SkillText>HTML</SkillText>
