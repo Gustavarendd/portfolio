@@ -7,7 +7,6 @@ const Navigation = () => {
       <NavLinks>
         <NavLink>Intro</NavLink>
         <NavLink>About Me</NavLink>
-        <NavLink>Skills</NavLink>
         <NavLink>Portfolio</NavLink>
         <NavLink>Contact</NavLink>
       </NavLinks>
