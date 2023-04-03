@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { SpinnerContainer } from '../spinner/spinner.styles';
-import { ReactComponent as upArrowSVG } from '../../assets/Logos/up-arrow.svg';
 
 export const BaseButton = styled.button`
   min-width: 200px;
@@ -66,10 +65,15 @@ export const ButtonSpinner = styled(SpinnerContainer)`
   height: 30px;
 `;
 
-export const BackToTopButton = styled(BaseButton)`
-  width: 50px;
+export const skillsButton = styled(BaseButton)`
+  width: 100%;
   height: 50px;
   min-width: 0;
-  border-radius: 50px;
-  position: fixed;
+  border-radius: 10px;
+  background-color: #dadada;
+  color: black;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+  }
 `;

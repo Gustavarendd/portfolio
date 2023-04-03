@@ -7,16 +7,16 @@ import { SectionContainer, Container } from './section.styles';
 const Section = () => {
   return (
     <Container>
-      <SectionContainer>
+      <SectionContainer id="intro">
         <Intro />
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer id="about">
         <About />
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer id="portfolio">
         <Portfolio />
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer id="contact">
         <Contact />
       </SectionContainer>
     </Container>

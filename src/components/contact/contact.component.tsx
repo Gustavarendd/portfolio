@@ -42,7 +42,7 @@ const Contact = () => {
         'service_qrf1spf',
         'template_j08qmq5',
         form.current || '',
-        'e6kkH-BNLS3rmLQLr',
+        'e6kkH-BNLS3rmLQL',
       )
 
       .then(
@@ -52,7 +52,7 @@ const Contact = () => {
           resetFormFields();
         },
         error => {
-          alert(error.text);
+          alert('Something went wrong, please try again later.');
           setIsSending(false);
         },
       );

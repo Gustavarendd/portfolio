@@ -10,6 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  min-width: 550px;
+ 
+
   
   padding: 0px;
   font-size: 1.25rem;

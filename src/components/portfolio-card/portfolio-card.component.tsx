@@ -33,7 +33,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
   }, []);
 
   return (
-    <ProjectContainer>
+    <ProjectContainer className="snap-point">
       <PortfolioImageContainer src={imageUrl} alt={name} />
       <div>
         <h4>{name}</h4>

@@ -4,7 +4,8 @@ export const ProjectContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
-  width: 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
 
   @media screen and (max-width: 1000px) {
     display: flex;
@@ -24,6 +25,6 @@ export const PortfolioImageContainer = styled.img`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  width: 100%;
+  max-width: 100%;
   gap: 10px;
 `;

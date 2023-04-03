@@ -9,10 +9,11 @@ import { ReactComponent as locationSVG } from '../../assets/Logos/location.svg';
 export const FooterContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 240px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
   background-color: #d0d0d0;
   box-shadow: 0px 2px 15px 0px grey;
 `;
@@ -56,15 +57,12 @@ export const PersonalInfoBox = styled.div`
 export const PhoneSVG = styled(phoneSVG)`
   width: 25px;
   height: 25px;
-  cursor: pointer;
 `;
 export const EmailSVG = styled(emailSVG)`
   width: 25px;
   height: 25px;
-  cursor: pointer;
 `;
 export const LocationSVG = styled(locationSVG)`
   width: 25px;
   height: 25px;
-  cursor: pointer;
 `;

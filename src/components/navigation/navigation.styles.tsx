@@ -4,6 +4,7 @@ export const NavigationContainer = styled.div`
   position: fixed;
   height: 65px;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +13,8 @@ export const NavigationContainer = styled.div`
   box-shadow: 0px 5px 15px gray;
 
   @media screen and (max-width: 800px) {
+    font-size: 1rem;
+    gap: 5%;
   }
 `;
 

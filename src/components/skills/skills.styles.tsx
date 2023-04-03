@@ -11,6 +11,7 @@ export const Container = styled.div`
   row-gap: 10px;
   position: fixed;
   width: 15%;
+  min-width: 70px;
   max-width: 250px;
   margin-top: 100px;
   margin-left: 30px;
@@ -19,9 +20,19 @@ export const Container = styled.div`
   background-color: #dadada;
   border-radius: 15px;
   box-shadow: 0px 5px 15px grey;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
   @media screen and (max-width: 1400px) {
-    width: 10%;
+    width: 7%;
   }
+`;
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
 `;
 
 export const ImageContainer = styled.div`
@@ -30,6 +41,7 @@ export const ImageContainer = styled.div`
   gap: 15px;
   padding-left: 6rem;
   width: 100%;
+
   @media screen and (max-width: 1400px) {
     justify-content: center;
     padding-left: 0;
@@ -60,6 +72,7 @@ export const SkillText = styled.p`
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
+
   @media screen and (max-width: 1400px) {
     display: none;
   }

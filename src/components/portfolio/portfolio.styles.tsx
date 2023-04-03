@@ -5,8 +5,11 @@ export const PortfolioContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
   width: 100%;
+`;
+
+export const Header = styled.h3`
+  margin-block-end: 0px;
 `;
 
 export const Container = styled.div`
@@ -27,9 +30,4 @@ export const ProjectsContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-`;
-
-export const Project = styled.div`
-  min-width: 100%;
-  scroll-snap-align: start;
 `;

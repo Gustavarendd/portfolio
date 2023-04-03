@@ -42,7 +42,16 @@ const Footer = () => {
         </ContactInfoBox>
       </ImageContainer>
       <div>
-        <p>©2023 Gustav Rasmussen</p>
+        <p>
+          Vectors and icons by{' '}
+          <a href="https://www.svgrepo.com" target="blank">
+            SVG Repo
+          </a>{' '}
+          <br />
+          Background Image{' '}
+          <a href="http://www.freepik.com">Designed by Freepik</a> <br />
+          ©2023 Gustav Rasmussen
+        </p>
       </div>
     </FooterContainer>
   );
