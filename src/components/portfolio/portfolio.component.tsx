@@ -39,7 +39,7 @@ const projects = {
     name: 'Portfolio Website',
     description: 'My Portfolio website. ',
     imageUrl: 'images/portfolio.png',
-    liveUrl: 'https://gustavarendd.github.io/to-do-list/',
+    liveUrl: 'https://soft-biscuit-e04604.netlify.app/',
     codeUrl: 'https://github.com/Gustavarendd/portfolio',
   },
 };
