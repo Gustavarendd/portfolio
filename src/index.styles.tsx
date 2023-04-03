@@ -18,7 +18,7 @@ body {
   font-size: 1.25rem;
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
   background-attachment: fixed;
   
 display: flex;
