@@ -15,6 +15,7 @@ export const Header = styled.h3`
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  height: fit-content;
   align-items: center;
   gap: 20px;
 `;

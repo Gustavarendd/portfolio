@@ -4,10 +4,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 10%;
+  width: 100%;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    align-items: center;
   }
 `;
 

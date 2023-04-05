@@ -14,7 +14,7 @@ const projects = {
     name: 'Clothing web-shop',
     description:
       'An e-commerce website created using React, TypeScript, Stripe and Firebase.',
-    imageUrl: 'images/crown-app.png',
+    imageUrl: 'images/crown-app-Small.png',
     liveUrl: 'https://jade-licorice-23a528.netlify.app/',
     codeUrl: 'https://github.com/Gustavarendd/crown-app',
   },
@@ -23,7 +23,7 @@ const projects = {
     name: 'Share My Place',
     description:
       'An app that lets you find your current location, and share a link to show where you are.',
-    imageUrl: 'images/share-my-place.png',
+    imageUrl: 'images/share-my-place-Small.png',
     liveUrl: 'https://gustavarendd.github.io/find-my-place/',
     codeUrl: 'https://github.com/Gustavarendd/find-my-place',
   },
@@ -31,14 +31,14 @@ const projects = {
     name: 'To Do List',
     description:
       'A simple To Do list, where you can drag list items from active to finished.',
-    imageUrl: 'images/to-do-list.png',
+    imageUrl: 'images/to-do-list-Small.png',
     liveUrl: 'https://gustavarendd.github.io/to-do-list/',
     codeUrl: 'https://github.com/Gustavarendd/to-do-list',
   },
   project4: {
     name: 'Portfolio Website',
     description: 'My Portfolio website. ',
-    imageUrl: 'images/portfolio.png',
+    imageUrl: 'images/portfolio-Small.png',
     liveUrl: 'https://soft-biscuit-e04604.netlify.app/',
     codeUrl: 'https://github.com/Gustavarendd/portfolio',
   },

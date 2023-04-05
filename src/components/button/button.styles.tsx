@@ -2,24 +2,25 @@ import styled from 'styled-components';
 import { SpinnerContainer } from '../spinner/spinner.styles';
 
 export const BaseButton = styled.button`
-  min-width: 200px;
+  /* min-width: 200px; */
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
+  padding: 0 1.5rem 0 1.5rem;
   font-size: 15px;
   background-color: black;
   color: white;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed';
   font-weight: bolder;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* transition: all 300 ease-out; */
 
   &:hover {
     background-color: white;
@@ -43,7 +44,7 @@ export const SentMessageButton = styled(BaseButton)`
 export const PortfolioButton = styled(BaseButton)`
   font-size: 15px;
   height: 30px;
-  min-width: 45%;
+  /* min-width: 45%; */
 `;
 
 export const SideScrollButton = styled(BaseButton)`
@@ -69,9 +70,11 @@ export const skillsButton = styled(BaseButton)`
   width: 100%;
   height: 50px;
   min-width: 0;
+  padding: 0;
   border-radius: 10px;
   background-color: #dadada;
   color: black;
+  border: none;
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border: none;

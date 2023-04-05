@@ -9,6 +9,7 @@ import {
   PersonalInfoBox,
   ContactInfoBox,
   TextBox,
+  Container,
 } from './footer.styles';
 
 const openLinkedInInNewTab = (): any => {
@@ -23,9 +24,11 @@ const openGithubInNewTab = (): any => {
 const Footer = () => {
   return (
     <FooterContainer>
-      <ImageContainer>
-        <LinkedInSVG onClick={openLinkedInInNewTab} />
-        <GitHubSVG onClick={openGithubInNewTab} />
+      <Container>
+        <ImageContainer>
+          <LinkedInSVG onClick={openLinkedInInNewTab} />
+          <GitHubSVG onClick={openGithubInNewTab} />
+        </ImageContainer>
         <ContactInfoBox>
           <PersonalInfoBox>
             <PhoneSVG />
@@ -40,7 +43,7 @@ const Footer = () => {
             <TextBox>Prague, Czech Republic</TextBox>
           </PersonalInfoBox>
         </ContactInfoBox>
-      </ImageContainer>
+      </Container>
       <div>
         <p>
           Vectors and icons by{' '}

@@ -2,7 +2,7 @@ import { useEffect, useState, FC } from 'react';
 
 import {
   ProjectContainer,
-  PortfolioImageContainer,
+  PortfolioImage,
   ButtonContainer,
 } from './portfolio-card.styles';
 import { Button, BUTTON_TYPES } from '../button/button.component';
@@ -34,7 +34,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
 
   return (
     <ProjectContainer className="snap-point">
-      <PortfolioImageContainer src={imageUrl} alt={name} />
+      <PortfolioImage src={imageUrl} alt={name} />
       <div>
         <h4>{name}</h4>
         <p>{description}</p>

@@ -9,13 +9,27 @@ import { ReactComponent as locationSVG } from '../../assets/Logos/location.svg';
 export const FooterContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 240px;
+  height: ;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   background-color: #d0d0d0;
   box-shadow: 0px 2px 15px 0px grey;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 1rem;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -28,8 +42,8 @@ export const ImageContainer = styled.div`
 export const ContactInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  height: 150px;
+  gap: 1rem;
+  height: 7rem;
   justify-content: center;
 `;
 

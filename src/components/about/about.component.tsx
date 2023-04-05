@@ -13,7 +13,7 @@ const About = () => {
           worldwide.
         </p>
       </AboutContainer>
-      <Picture src={require('../../assets/Danmark.jpg')} alt="Gustav" />
+      <Picture src={require('../../assets/Danmark-small.jpeg')} alt="Gustav" />
     </Container>
   );
 };

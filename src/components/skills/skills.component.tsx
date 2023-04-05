@@ -13,19 +13,7 @@ import {
 } from './skills.styles';
 
 const Skills = () => {
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setViewportWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const clickHandler = () => {
     if (isOpen) {
@@ -37,7 +25,11 @@ const Skills = () => {
 
   return (
     <Container
-      style={isOpen ? { height: '300px' } : { width: '50px', height: '50px' }}
+      style={
+        isOpen
+          ? { width: '4rem, fit-content', height: '330px' }
+          : { width: '4rem', height: '3rem' }
+      }
     >
       <Button buttonType={BUTTON_TYPES.skillsButton} onClick={clickHandler}>
         Skills

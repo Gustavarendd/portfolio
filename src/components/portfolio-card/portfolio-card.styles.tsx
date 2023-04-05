@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ProjectContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 1rem;
   min-width: 100%;
   scroll-snap-align: start;
+  text-align: center;
 
   @media screen and (max-width: 1000px) {
     display: flex;
@@ -15,7 +16,8 @@ export const ProjectContainer = styled.div`
   }
 `;
 
-export const PortfolioImageContainer = styled.img`
+export const PortfolioImage = styled.img`
+  align-self: center;
   width: 100%;
 
   @media screen and (max-width: 1000px) {
@@ -25,6 +27,7 @@ export const PortfolioImageContainer = styled.img`
 
 export const ButtonContainer = styled.div`
   display: flex;
+  justify-content: center;
   max-width: 100%;
-  gap: 10px;
+  gap: 1rem;
 `;

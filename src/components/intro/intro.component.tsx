@@ -9,7 +9,7 @@ const Intro = () => {
   return (
     <IntroContainer>
       <ProfilePicture
-        src={require('../../assets/profilePicture.jpeg')}
+        src={require('../../assets/profilePicture-small.jpeg')}
         alt="Gustav"
       />
       <IntroTextContainer>
