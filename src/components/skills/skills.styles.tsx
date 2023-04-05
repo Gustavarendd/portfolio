@@ -21,8 +21,10 @@ export const Container = styled.div`
   z-index: 20;
   @media screen and (max-width: 1400px) {
     min-width: 3rem;
+    padding-left: 2px;
+    padding-right: 2px;
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     margin-top: 4rem;
     margin-left: 0.7rem;
   }

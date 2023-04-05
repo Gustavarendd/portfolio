@@ -21,7 +21,9 @@ display: flex;
 flex-direction: column;
 }
 
-
+h3{
+  font-size: 1.6rem;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

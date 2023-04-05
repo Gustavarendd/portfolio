@@ -13,7 +13,7 @@ export const NavigationContainer = styled.div`
   transition: all 0.3s ease;
   z-index: 20;
   min-width: 390px;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     font-size: 0.7rem;
     gap: 10%;
     height: 3rem;

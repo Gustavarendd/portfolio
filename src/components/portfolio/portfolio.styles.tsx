@@ -6,6 +6,9 @@ export const PortfolioContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  @media screen and (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 export const Header = styled.h3`
