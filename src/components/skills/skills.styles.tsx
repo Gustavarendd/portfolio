@@ -10,15 +10,22 @@ export const Container = styled.div`
   align-items: center;
   row-gap: 10px;
   position: fixed;
-  min-width: fit-content;
-  margin-top: 100px;
-  margin-left: 30px;
+  min-width: 180px;
+  margin-top: 5rem;
+  margin-left: 1rem;
   background-color: #dadada;
   border-radius: 15px;
   box-shadow: 0px 5px 15px grey;
   transition: all 0.4s linear;
   overflow: hidden;
   z-index: 20;
+  @media screen and (max-width: 1400px) {
+    min-width: 3rem;
+  }
+  @media screen and (max-width: 750px) {
+    margin-top: 4rem;
+    margin-left: 0.7rem;
+  }
 `;
 
 export const SkillsContainer = styled.div`
