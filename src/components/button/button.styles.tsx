@@ -69,7 +69,7 @@ export const ButtonSpinner = styled(SpinnerContainer)`
 export const skillsButton = styled(BaseButton)`
   width: 100%;
   height: 50px;
-  min-width: 0;
+  min-width: 100%;
   padding: 0;
   border-radius: 10px;
   background-color: #dadada;

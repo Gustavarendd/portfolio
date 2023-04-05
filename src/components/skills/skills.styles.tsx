@@ -20,9 +20,7 @@ export const Container = styled.div`
   overflow: hidden;
   z-index: 20;
   @media screen and (max-width: 1400px) {
-    min-width: 3rem;
-    padding-left: 2px;
-    padding-right: 2px;
+    min-width: 4rem;
   }
   @media screen and (max-width: 800px) {
     margin-top: 4rem;

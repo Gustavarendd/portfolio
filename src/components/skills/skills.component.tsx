@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Button, BUTTON_TYPES } from '../button/button.component';
 import {
@@ -27,7 +27,7 @@ const Skills = () => {
     <Container
       style={
         isOpen
-          ? { width: '4rem, fit-content', height: '330px' }
+          ? { width: '4rem', height: '330px' }
           : { width: '4rem', height: '3rem' }
       }
     >
