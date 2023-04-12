@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+
 import Spinner from './components/spinner/spinner.component';
 import { GlobalStyle } from './index.styles';
 import Skills from './components/skills/skills.component';

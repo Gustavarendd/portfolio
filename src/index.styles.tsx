@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
-import backgroundImage from './assets/Backgrounds/bottom.jpeg';
+import styled, { createGlobalStyle } from 'styled-components';
+import lightBackgroundImage from './assets/Backgrounds/light-bg.jpeg';
+import darkBackgroundImage from './assets/Backgrounds/dark-bg.jpeg';
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -12,9 +13,9 @@ body {
   
   padding: 0px;
   font-size: 1.25rem;
-  background-image: url(${backgroundImage});
+  background-image: url(${lightBackgroundImage});
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
   
 display: flex;
