@@ -18,7 +18,6 @@ export const Header = styled.h3`
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  height: fit-content;
   align-items: center;
   gap: 20px;
 `;
@@ -26,8 +25,10 @@ export const Container = styled.div`
 export const ProjectsContainer = styled.div`
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   max-width: 100%;
+  gap: 5px;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -3,6 +3,9 @@ import { ReactComponent as htmlSVG } from '../../assets/Logos/html.svg';
 import { ReactComponent as cssSVG } from '../../assets/Logos/css.svg';
 import { ReactComponent as jsSVG } from '../../assets/Logos/js.svg';
 import { ReactComponent as reactSVG } from '../../assets/Logos/react.svg';
+import { ReactComponent as tsSVG } from '../../assets/Logos/typescript-logo.svg';
+import { ReactComponent as styledSVG } from '../../assets/Logos/styled-components.svg';
+import { ReactComponent as npmSVG } from '../../assets/Logos/npm.svg';
 
 export const Container = styled.div`
   display: flex;
@@ -66,6 +69,21 @@ export const JSLogo = styled(jsSVG)`
 `;
 
 export const ReactLogo = styled(reactSVG)`
+  max-height: 50px;
+  max-width: 50px;
+`;
+
+export const TSLogo = styled(tsSVG)`
+  max-height: 50px;
+  max-width: 50px;
+`;
+
+export const StyledLogo = styled(styledSVG)`
+  max-height: 50px;
+  max-width: 50px;
+`;
+
+export const NPMLogo = styled(npmSVG)`
   max-height: 50px;
   max-width: 50px;
 `;

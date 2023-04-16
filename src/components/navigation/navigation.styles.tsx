@@ -26,7 +26,7 @@ export const NavLinks = styled.div`
   align-items: center;
 `;
 
-export const NavLink = styled.div`
+export const NavLink = styled.p`
   padding: 10px 10px;
   cursor: pointer;
   @media screen and (max-width: 600px) {

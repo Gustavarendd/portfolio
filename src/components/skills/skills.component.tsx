@@ -7,6 +7,9 @@ import {
   CSSLogo,
   JSLogo,
   ReactLogo,
+  TSLogo,
+  StyledLogo,
+  NPMLogo,
   ImageContainer,
   SkillText,
   SkillsContainer,
@@ -27,7 +30,7 @@ const Skills = () => {
     <Container
       style={
         isOpen
-          ? { width: '4rem', height: '330px' }
+          ? { width: '4rem', height: '520px' }
           : { width: '4rem', height: '3rem' }
       }
     >
@@ -37,21 +40,33 @@ const Skills = () => {
       <SkillsContainer
         style={isOpen ? { display: 'flex' } : { display: 'none' }}
       >
-        <ImageContainer>
+        <ImageContainer title="HTML">
           <HTMLLogo />
           <SkillText>HTML</SkillText>
         </ImageContainer>
-        <ImageContainer>
+        <ImageContainer title="CSS">
           <CSSLogo />
           <SkillText>CSS</SkillText>
         </ImageContainer>
-        <ImageContainer>
+        <ImageContainer title="JavaScript">
           <JSLogo />
           <SkillText>JavaScript</SkillText>
         </ImageContainer>
-        <ImageContainer>
+        <ImageContainer title="React">
           <ReactLogo />
           <SkillText>React</SkillText>
+        </ImageContainer>
+        <ImageContainer title="TypeScript">
+          <TSLogo />
+          <SkillText>TypeScript</SkillText>
+        </ImageContainer>
+        <ImageContainer title="Styled-Components">
+          <StyledLogo />
+          <SkillText>Styled-Components</SkillText>
+        </ImageContainer>
+        <ImageContainer title="NPM">
+          <NPMLogo />
+          <SkillText>NPM</SkillText>
         </ImageContainer>
       </SkillsContainer>
     </Container>

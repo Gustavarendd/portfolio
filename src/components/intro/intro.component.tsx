@@ -10,7 +10,7 @@ const Intro = () => {
     <IntroContainer>
       <ProfilePicture
         src={require('../../assets/profilePicture-small.jpeg')}
-        alt="Gustav"
+        alt="Picture of me, Gustav"
       />
       <IntroTextContainer>
         <h3>Hi! My name is Gustav</h3>

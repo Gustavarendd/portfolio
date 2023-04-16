@@ -6,10 +6,9 @@ import { ReactComponent as phoneSVG } from '../../assets/Logos/phone.svg';
 import { ReactComponent as emailSVG } from '../../assets/Logos/email.svg';
 import { ReactComponent as locationSVG } from '../../assets/Logos/location.svg';
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
   display: flex;
   width: 100%;
-  height: ;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
