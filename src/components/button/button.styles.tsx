@@ -72,7 +72,7 @@ export const skillsButton = styled(BaseButton)`
   min-width: 100%;
   padding: 0;
   border-radius: 10px;
-  background-color: #dadada;
+  background-color: #d0d0d0;
   color: black;
   border: none;
   &:hover {
