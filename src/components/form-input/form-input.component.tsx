@@ -11,6 +11,7 @@ const FormInput: FC<InputProps> = ({ label, ...otherProps }) => {
     <InputContainer>
       <InputField {...otherProps} />
       <InputLabel
+        htmlFor={otherProps.name}
         shrink={Boolean(
           otherProps.value &&
             typeof otherProps.value === 'string' &&

@@ -19,7 +19,7 @@ export const Container = styled.div`
   background-color: #dadada;
   border-radius: 15px;
   box-shadow: 0px 5px 15px grey;
-  transition: all 0.4s linear;
+  transition: all 0.5s linear;
   overflow: hidden;
   z-index: 20;
   @media screen and (max-width: 1400px) {
@@ -36,7 +36,7 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  height: 100%;
+  max-height: 100%;
 `;
 
 export const ImageContainer = styled.div`
@@ -91,9 +91,11 @@ export const NPMLogo = styled(npmSVG)`
 export const SkillText = styled.p`
   font-size: 1rem;
   font-weight: 600;
+  max-width: 100%;
   margin: 0;
 
   @media screen and (max-width: 1400px) {
-    display: none;
+    max-width: 0%;
+    overflow: hidden;
   }
 `;

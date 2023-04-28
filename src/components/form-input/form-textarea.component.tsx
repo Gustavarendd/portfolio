@@ -16,6 +16,7 @@ const TextArea: FC<TextAreaProps> = ({ label, ...otherProps }) => {
     <MessageFieldContainer>
       <MessageField {...otherProps} />
       <MessageFieldLabel
+        htmlFor={otherProps.name}
         shrink={Boolean(
           otherProps.value &&
             typeof otherProps.value === 'string' &&

@@ -18,13 +18,7 @@ import {
 const Skills = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const clickHandler = () => {
-    if (isOpen) {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
-    }
-  };
+  const clickHandler = () => setIsOpen(!isOpen);
 
   return (
     <Container
@@ -38,7 +32,7 @@ const Skills = () => {
         Skills
       </Button>
       <SkillsContainer
-        style={isOpen ? { display: 'flex' } : { display: 'none' }}
+        style={isOpen ? { maxHeight: '100%' } : { maxHeight: '0%' }}
       >
         <ImageContainer title="HTML">
           <HTMLLogo />
