@@ -69,6 +69,7 @@ const Contact = () => {
             onChange={handleInputChange}
             type={'text'}
             name="name"
+            id="name"
             value={name}
           />
           <FormInput
@@ -77,6 +78,7 @@ const Contact = () => {
             onChange={handleInputChange}
             type={'email'}
             name="email"
+            id="email"
             value={email}
           />
           <FormInput
@@ -85,6 +87,7 @@ const Contact = () => {
             onChange={handleInputChange}
             type={'text'}
             name="subject"
+            id="subject"
             value={subject}
           />
           <TextArea
@@ -93,6 +96,7 @@ const Contact = () => {
             onChange={handleInputChange}
             type={'text'}
             name="message"
+            id="message"
             value={message}
           />
           {!buttonState ? (
