@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import lightBackgroundImage from './assets/Backgrounds/light-bg.jpeg';
 import darkBackgroundImage from './assets/Backgrounds/dark-bg.jpeg';
 
@@ -13,6 +13,7 @@ body {
   
   padding: 0px;
   font-size: 1.25rem;
+  /* background: radial-gradient(#d1d1d1, #989898); */
   background-image: url(${lightBackgroundImage});
   background-repeat: no-repeat;
   background-size: cover;

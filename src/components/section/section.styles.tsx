@@ -12,9 +12,10 @@ export const SectionContainer = styled.section`
   display: flex;
   width: 70%;
   max-width: 900px;
-  padding: 3rem 3rem 5rem;
-  margin: 3rem auto;
+  padding: 2rem 2rem;
+  margin: 1rem auto;
   background: rgba(227, 227, 227, 0.7);
+
   border-radius: 15px;
   box-shadow: 0px 5px 15px grey;
   @media screen and (max-width: 800px) {

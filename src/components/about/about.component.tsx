@@ -14,7 +14,8 @@ const About = () => {
         </p>
       </AboutContainer>
       <Picture
-        src={require('../../assets/Danmark-small.jpeg')}
+        src={require('../../assets/Danmark-small.jpg')}
+        srcSet={`${require('../../assets/Danmark-small.jpg')} 500w, ${require('../../assets/Danmark-medium.jpg')} 1000w`}
         alt="Sailing Ship"
       />
     </Container>
